@@ -1,6 +1,15 @@
+* {
+margin: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
 .profile-picture {
   height: 25rem;
   width: 25rem;
   border-radius: 50%;
 }
-

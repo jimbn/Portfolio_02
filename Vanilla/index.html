@@ -6,14 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jim Nguyen</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/styles/util.css">
   <link rel="stylesheet" href="./assets/styles/project.css">
+  <link rel="stylesheet" href="./assets/styles/contact.css">
   <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
   <header>
-    <h1>Jim Nguyen</h1>
+    <!-- <h1>Jim Nguyen</h1> -->
     <nav>
-      <a href="#about">About</a>
+      <!-- <a href="#about">About</a> -->
       <a href="#project">Project</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
@@ -21,8 +23,10 @@
   </header>
 
   <About id="about">
-    <h1>About</h1>
-    <img class="profile-picture" src="./assets/images/myPic.jpg" alt="Headshot picture of Jim Nguyen" >
+    <h1 class="flex-center">Jim Nguyen</h1>
+    <div class="flex-center">
+      <img class="profile-picture" src="./assets/images/myPic.jpg" alt="Headshot picture of Jim Nguyen" >
+    </div>
     <p>
       I'm a driven full stack developer focusing on MERN stack. Recently completed and earned a certificate
       in Full Stack Web Development from University of California, Berkeley coding bootcamp. With my experience,
@@ -38,7 +42,7 @@
   </About>
 
   <Project id="project">
-    <h1>Project</h1>
+    <h1 class="flex-center">Project</h1>
     <div class="accordian">
       <div class='accordian-item'>
         <img src='./assets/images/PartyHearty.jpg' alt='Party Hearty screenshot'/>
@@ -142,7 +146,7 @@
   </Project>
 
   <Resume id="resume">
-    <h1>Resume</h1>
+    <h1 class="flex-center">Resume</h1>
     <p>
       Resume goes here
     </p>
@@ -150,16 +154,22 @@
   </Resume>
 
   <Contact id="contact">
-    <h1>Contact</h1>
-    <ul>
-      <li>email</li>
-      <li>github</li>
-      <li>linked in</li>
-    </ul>
+    <h1 class="flex-center">Contact</h1>
+    <div class="flex-center">
+      <a href="">
+        <img class="contact-icon" src="./assets/images/blackGit.png" alt="">
+      </a>
+      <a href="">
+        <img class="contact-icon" src="./assets/images/link.png" alt="">
+      </a>
+      <a href="">
+        <img class="contact-icon" src="./assets/images/gmail.jpg" alt="">
+      </a>
+    </div>
   </Contact>
 
   <footer>
-    <p>copyright (need to add icon) 2023</p>
+    <p>&copy; 2023</p>
   </footer>
 </body>
 </html>
