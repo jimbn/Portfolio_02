@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Header from './components/Header';
+import Main from './components/Main';
 import Footer from './components/Footer';
 
 import './App.css';
@@ -17,10 +18,11 @@ function App() {
 
   return (
     <div className="">
-      <Header/>
-      <main>
-        {/* Render page content */}
-      </main>
+      <Header
+        pages={pages}
+        setCurrentPage={setCurrentPage}
+      />
+      <Main currentPage={currentPage}/>
       <Footer/>
     </div>
   );

@@ -1,12 +1,16 @@
 import React from "react";
+import Nav from "../Nav";
 
-function Header () {
+function Header ({pages, setCurrentPage}) {
 
   return(
     <header style={{ display: 'flex', justifyContent:'space-between' }}>
       <h1> Jim Bui Nguyen</h1>
       <div>
-        <p>nav</p>
+        <Nav 
+          pages={pages}
+          setCurrentPage={setCurrentPage}
+        />
       </div>
     </header>
   )  
