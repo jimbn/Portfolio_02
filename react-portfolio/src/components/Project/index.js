@@ -1,19 +1,22 @@
 import React from "react";
+import ProjectFocus from "../ProjectFocus";
+import ProjectList from "../ProjectList";
 import projectArray from "../../assets/projectList/projectArray";
 
+
 function Project () {
+  const [ focusProject, setFocusProject ] = useState( projectArray[0] )
+
   return(
-    <div style={{ display: 'flex', justifyContent:'space-between', maxWidth:"75%"}}>
-      {projectArray.map((project) => (
-        <div style={{ position: "relative" }}>
-          <img src={project.image} style={{ height: "200px", width:"200px", position: "absolute"}}/>
-          <div style={{ position: "absolute", zIndex:"10", color:"red" }}>
-            <h2>{project.name}</h2>
-            <p>{project.language}</p>
-          </div>
-        </div>
-      ))}
-    </div>
+   <>
+    <ProjectFocus 
+      focusProject = {focusProject}
+    />
+    <ProjectList 
+      projectArray = {projectArray}
+      setFocusProject = {setFocusProject}
+    />
+   </>
   )
 }
 
