@@ -4,8 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   transition: 0.5s ease-in-out;
   position: relative;
@@ -13,8 +13,8 @@
 }
 
 .hamburger {
-  width: 80px;
-  height: 7px;
+  width: 35px;
+  height: 5px;
   background: black;
   transition: 0.25s ease-in-out;
   border-radius: 10px;
@@ -24,8 +24,8 @@
 .hamburger::after {
   content: '';
   position: absolute;
-  width: 80px;
-  height: 7px;
+  width: 35px;
+  height: 5px;
   background: black;
   transition: 0.5s ease-in-out;
   border-radius: 10px;
@@ -57,13 +57,14 @@
   color: black;
   opacity: 0;
   transition: 0.3s;
-  transform: translateX(-100%);
+  transform: translateX(100%) translateY(-95%);
   pointer-events: none;
+  position: absolute;
 }
 
 .menu-open{
   opacity: 1;
   transition: 0.3s;
-  transform: translateX(20px);
+  transform: translateX(-100%) translateY(-95%);
   pointer-events: all;
 }
