@@ -1,0 +1,69 @@
+/* Button */
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  border: 1px solid black;
+}
+
+.hamburger {
+  width: 80px;
+  height: 7px;
+  background: black;
+  transition: 0.25s ease-in-out;
+  border-radius: 10px;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  background: black;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.hamburger::before {
+  transform: translateY(-20px);
+}
+
+.hamburger::after {
+  transform: translatey(20px);
+}
+
+.open .hamburger {
+  background-color: transparent;
+}
+
+.open .hamburger::before {
+  transform: rotate(-45deg);
+}
+
+.open .hamburger::after {
+  transform: rotate(45deg);
+}
+
+/* Menu */
+
+.menu{
+  color: black;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+
+.menu-open{
+  opacity: 1;
+  transition: 0.3s;
+  transform: translateX(20px);
+  pointer-events: all;
+}

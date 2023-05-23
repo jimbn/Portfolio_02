@@ -4,7 +4,7 @@ import myPic from "../../assets/images/profile-pic/myPic.jpg"
 function About () {
   return(
     <div style={{display:"flex"}}>
-      <img style={{ width: "200px", height: "200px", borderRadius:"1000px" }}src ={myPic}/>
+      <img style={{ width: "300px", height: "300px", borderRadius:"1000px",  }}src ={myPic}/>
       <div>
         <p>
           I'm a driven full stack developer focusing on MERN stack. Recently completed and earned a certificate
