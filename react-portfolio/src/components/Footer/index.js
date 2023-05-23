@@ -7,7 +7,7 @@ function Footer () {
 
 
   return(
-    <footer style={{ display: 'flex', justifyContent:'center' }}>
+    <footer style={{ display: 'flex', textAlign:'center', position: 'fixed', bottom: '0', left:'0', width:'100%' }}>
       <p>Jim Bui Nguyen &copy; {currentYear} </p>
     </footer>
   )

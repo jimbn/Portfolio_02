@@ -2,6 +2,7 @@ import React from "react";
 
 import About from "../About";
 import Project from "../Project";
+import Resume from "../Resume";
 
 function Main ({ currentPage }) {
 
@@ -11,6 +12,8 @@ function Main ({ currentPage }) {
         return <About/>
       case 'Project':
         return <Project/>
+      case 'Resume':
+        return <Resume/>
       default: 
       return <About/>
     }
