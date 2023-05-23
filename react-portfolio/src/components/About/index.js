@@ -3,7 +3,7 @@ import myPic from "../../assets/images/profile-pic/myPic.jpg"
 
 function About () {
   return(
-    <>
+    <div style={{display:"flex"}}>
       <img style={{ width: "200px", height: "200px", borderRadius:"1000px" }}src ={myPic}/>
       <div>
         <p>
@@ -31,7 +31,7 @@ function About () {
           and in a team environment. 
         </p>
       </div>
-    </>
+    </div>
   )
 }
 
