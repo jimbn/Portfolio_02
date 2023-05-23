@@ -1,4 +1,9 @@
-const array = [
+import partyHearty from "../images/ProjectScreenShot/PartyHearty.jpg"
+import onlyFriends from "../images/ProjectScreenShot/OnlyFriends.png"
+import humanBestfriend from "../images/ProjectScreenShot/HumanBestFriend.png"
+
+
+const projectArray = [
   {
       name: 'Party Hearty',
       description: 'Party Hearty is a web application that allows user to sign up and create events that contains their id key. Each event has details pertiaing to the event and map pinpointing to the exact location. Additionally, user are able to update and delete their events that they create. Along with presenting the event, the application allow the user to send out invite to other user on the platform and provide a guest list where other user can RSVP to.',
@@ -7,7 +12,7 @@ const array = [
   "Geosearch", "React-Bootstrap", "Material UI", "Heroku"],
       gitHub: 'https://github.com/sammcowen/party_hearty',
       site: "https://stormy-thicket-02132.herokuapp.com/",
-      image: PartyHearty,
+      image: partyHearty,
   },
   {
       name: "Only_Friends",
@@ -16,7 +21,7 @@ const array = [
       tools: ["SQL", "Express.js", "Node.js", "Handlebars.js", "Multer", "Heroku"],
       gitHub:'https://github.com/MCORTEZM1/Only_Friends',
       site: "https://only-friendz.herokuapp.com/",
-      image: OnlyFriend,
+      image: onlyFriends,
   },
   {
       name: "Human's Best Friend",
@@ -25,8 +30,10 @@ const array = [
       tools: ["MD Bootstrap", "Third-Party APIs"],
       gitHub:'https://github.com/jimbn/Project-01',
       site: "https://jimbn.github.io/Project-01/",
-      image: BestFriend,
+      image: humanBestfriend,
   },
 
   
 ];
+
+export default projectArray;
