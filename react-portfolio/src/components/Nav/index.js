@@ -17,6 +17,7 @@ function Nav (props) {
           <li  key={Page.name}>
             <span 
             onClick={() => setCurrentPage(Page)}
+            style={{cursor:"pointer"}}
             >
               {Page.name}
             </span>

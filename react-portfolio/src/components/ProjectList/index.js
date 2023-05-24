@@ -6,7 +6,7 @@ function ProjectList (props) {
   return(
     <div style={{ display: 'flex', justifyContent:'space-between', maxWidth:"75%"}}>
       {projectArray.map((Project) => (
-        <div style={{ position: "relative" }}
+        <div style={{ position: "relative", cursor:"pointer" }}
           onClick={() => setFocusProject(Project)}>
           <img src={Project.image} style={{ height: "200px", width:"200px", position: "absolute"}}/>
           <div style={{ position: "absolute", zIndex:"10", color:"red" }}>

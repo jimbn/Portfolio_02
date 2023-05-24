@@ -32,11 +32,11 @@
 }
 
 .hamburger::before {
-  transform: translateY(-15px);
+  transform: translateY(-12px);
 }
 
 .hamburger::after {
-  transform: translatey(15px);
+  transform: translatey(12px);
 }
 
 /* .open .hamburger {

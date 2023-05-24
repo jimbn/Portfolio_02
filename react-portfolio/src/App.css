@@ -1,3 +1,13 @@
-* {
-  margin: 0.5rem;
+*{
+  margin: 0;
+}
+
+html {
+  background: radial-gradient(circle 150vh at 50% 115%, rgba(209,232,226,1) 0%, rgba(17,100,102,1) 50%, rgba(44,53,49,1) 90%);
+  height: 100%;
+  background-position: center;
+}
+
+body {
+  margin: 1rem;
 }
