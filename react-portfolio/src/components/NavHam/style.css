@@ -9,15 +9,17 @@
   cursor: pointer;
   transition: 0.5s ease-in-out;
   position: relative;
-  border: 1px solid black;
+  border-radius: 100rem;
 }
 
 .hamburger {
-  width: 35px;
+  width: 20px;
   height: 5px;
-  background: black;
+  background: white;
   transition: 0.25s ease-in-out;
   border-radius: 10px;
+  justify-content: center;
+  display: flex;
 }
 
 .hamburger::before,
@@ -39,16 +41,24 @@
   transform: translatey(12px);
 }
 
+.menu-btn:hover {
+  background: radial-gradient(circle, rgba(209,232,226,.3) 0%, rgba(17,100,102,.2) 50%);
+}
+
+
+
 /* .open .hamburger {
   transform: rotate(-45deg)
 } */
 
 .open .hamburger::before {
-  transform: rotate(-45deg) translateY(-15px);
+  transform: rotate(45deg) translateY(-15px);
+  background:white;
 }
 
 .open .hamburger::after {
-  transform: rotate(45deg) translatey(15px);
+  transform: rotate(-45deg) translatey(15px);
+  background:white;
 }
 
 /* Menu */
@@ -57,7 +67,7 @@
   color: black;
   opacity: 0;
   transition: 0.3s;
-  transform: translateX(-40%) translateY(-95%);
+  transform: translateX(-10%) translateY(-95%);
   pointer-events: none;
   position: absolute;
 }
@@ -65,6 +75,6 @@
 .menu-open{
   opacity: 1;
   transition: 0.3s;
-  transform: translateX(-100%) translateY(-95%);
+  transform: translateX(25%) translateY(-95%);
   pointer-events: all;
 }
