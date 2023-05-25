@@ -1,32 +1,33 @@
 import React, { useState } from "react";
 import styled, {keyframes} from 'styled-components';
-import { fadeIn } from 'react-animations'
+import { merge, fadeIn, fadeOut, fadeInLeft } from 'react-animations'
 import ProjectFocus from "../ProjectFocus";
 import ProjectList from "../ProjectList";
 import projectArray from "../../assets/projectList/projectArray";
 import "./style.css";
 
 function Project () {
-
   
+  // const mergeAnimation = merge(fadeInLeft, fadeIn);
+  let keyAnimation = keyframes`${fadeInLeft}`;
+  const keyOut = keyframes`${fadeOut}`;
 
   const [ focusProject, setFocusProject ] = useState(projectArray[0]);
-  const FadeIn = styled.div`animations: 2s ${keyframes`${fadeIn}`}`;
-
-
-
+  let Animation = styled.div`animation: 4s ${keyAnimation}`;
+// to have animate out need to set useState being boolean.
+// set switch component and have onclick, change this.state == true
   return(
    <>
-        <FadeIn>
+      <Animation>
         <ProjectFocus 
           focusProject = {focusProject}
         />
-        </FadeIn>
-    <ProjectList 
-      focusProject = {focusProject}
-      projectArray = {projectArray}
-      setFocusProject = {setFocusProject}
-    />
+      </Animation>
+      <ProjectList 
+        focusProject = {focusProject}
+        projectArray = {projectArray}
+        setFocusProject = {setFocusProject}
+      />
    </>
   )
 }
