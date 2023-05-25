@@ -1,19 +1,23 @@
-.fade-entering{
+.fade-enter{
   transform: translateX(100px);
+  opacity: 0;
   transition: 0.3s;
 }
 
-.fade-entered{
+.fade-enter-active{
   transform: translateX(0px);
   transition: 0.3s;
+  opacity: 1;
 }
 
-.fade-exiting{
+.fade-exit{
   transform: translateX(0px);
   transition: 0.3s;
+  opacity: 1;
 }
 
-.fade-exited{
+.fade-exit-active{
   transform: translateX(-100px);
   transition: 0.3s;
+  opacity: 0;
 }

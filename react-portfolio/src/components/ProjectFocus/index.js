@@ -1,12 +1,15 @@
-import React, {useRef} from "react";
+import React from "react";
 import "./style.css"
 
 function ProjectFocus({ focusProject, classNames }){
   const tools= focusProject.tools;
-  const nodeRef = useRef(null)
+  const duration = 1000; // ms
+  // const delay = 500; // ms
+
+  const animStr = () => `fadeIn ${duration}ms ease-out `;
 
   return(
-        <div  className={classNames} ref ={nodeRef} style={{display:"flex", padding:"1rem"}}>
+        <div  className={classNames} style={{display:"flex", padding:"1rem", animation: animStr()}}>
           <img style={{width: "400px", height:"350px"}} src={focusProject.image}/>
           <div style={{padding:"1rem"}}>
             <h2 style={{padding:"0 1rem"}}>{focusProject.name}</h2>

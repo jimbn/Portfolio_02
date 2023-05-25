@@ -15,9 +15,7 @@ const projectArray = [
       gitHub: 'https://github.com/sammcowen/party_hearty',
       site: "https://stormy-thicket-02132.herokuapp.com/",
       image: partyHearty,
-      id: uuidv4(),
-      nodeRef: createRef(null),
-      display: true,
+  
   },
   {
       name: "Only_Friends",
@@ -27,9 +25,6 @@ const projectArray = [
       gitHub:'https://github.com/MCORTEZM1/Only_Friends',
       site: "https://only-friendz.herokuapp.com/",
       image: onlyFriends,
-      id: uuidv4(),
-      nodeRef: createRef(null),
-      display: false,
   },
   {
       name: "Human's Best Friend",
@@ -39,9 +34,7 @@ const projectArray = [
       gitHub:'https://github.com/jimbn/Project-01',
       site: "https://jimbn.github.io/Project-01/",
       image: humanBestfriend,
-      id: uuidv4(),
-      nodeRef: createRef(null),
-      display: false,
+  
   },
 
   

@@ -1,41 +1,31 @@
 import React, { useState } from "react";
+import styled, {keyframes} from 'styled-components';
+import { fadeIn } from 'react-animations'
 import ProjectFocus from "../ProjectFocus";
 import ProjectList from "../ProjectList";
 import projectArray from "../../assets/projectList/projectArray";
 import "./style.css";
-import { Transition } from 'react-transition-group';
-
-import "./style.css"
 
 function Project () {
-  let object = projectArray.findIndex((Project) => Project.display === true)
+
   
 
-  const [ focusProject, setFocusProject ] = useState(projectArray[`${object}`])
-  const [inProp, setInProp] = useState(false);
+  const [ focusProject, setFocusProject ] = useState(projectArray[0]);
+  const FadeIn = styled.div`animations: 2s ${keyframes`${fadeIn}`}`;
+
 
 
   return(
    <>
-   <Transition
-      in={inProp}
-      nodeRef={focusProject.nodeRef}
-      timeout={500}
-    >
-      {state => (
+        <FadeIn>
         <ProjectFocus 
           focusProject = {focusProject}
-          classNames={`fade fade-${state}`}
-          inProp = {inProp}
         />
-        )}
-    </Transition>
+        </FadeIn>
     <ProjectList 
       focusProject = {focusProject}
       projectArray = {projectArray}
       setFocusProject = {setFocusProject}
-      setInProp = {setInProp}
-      inProp = {inProp}
     />
    </>
   )
