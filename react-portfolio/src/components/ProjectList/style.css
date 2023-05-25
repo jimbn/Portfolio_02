@@ -1,0 +1,7 @@
+.animate{
+  transition: opacity 5s ease-in-out;
+}
+
+.transition-in{
+  opacity: 1;
+}

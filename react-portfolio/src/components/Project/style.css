@@ -1,0 +1,19 @@
+.fade-entering{
+  transform: translateX(100px);
+  transition: 0.3s;
+}
+
+.fade-entered{
+  transform: translateX(0px);
+  transition: 0.3s;
+}
+
+.fade-exiting{
+  transform: translateX(0px);
+  transition: 0.3s;
+}
+
+.fade-exited{
+  transform: translateX(-100px);
+  transition: 0.3s;
+}

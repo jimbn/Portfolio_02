@@ -1,6 +1,5 @@
 import React from "react";
 import NavHam from "../NavHam";
-import Nav from "../Nav";
 
 function Header ({pages, setCurrentPage}) {
 
