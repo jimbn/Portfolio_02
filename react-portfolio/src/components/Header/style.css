@@ -1,3 +1,7 @@
+.nav {
+  padding-left: 1rem ;
+}
+
 /* Button */
 
 .menu-btn {
@@ -45,12 +49,6 @@
   background: radial-gradient(circle, rgba(209,232,226,.3) 0%, rgba(17,100,102,.2) 50%);
 }
 
-
-
-/* .open .hamburger {
-  transform: rotate(-45deg)
-} */
-
 .open .hamburger::before {
   transform: rotate(45deg) translateY(-15px);
   background:white;
@@ -64,7 +62,7 @@
 /* Menu */
 
 .menu{
-  color: black;
+  color: #D1E8E2;
   opacity: 0;
   transition: 0.3s;
   transform: translateX(-10%) translateY(-95%);

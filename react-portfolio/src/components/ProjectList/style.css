@@ -1,7 +1,26 @@
-.animate{
-  transition: opacity 5s ease-in-out;
+.project-item{
+  position: relative;
+  cursor: pointer;
+}
+.project-item-img{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  opacity: 0.5;
 }
 
-.transition-in{
+.project-item-txt {
+  position: relative;
+  color:#D9B08C;
+  text-shadow: 0 0 2px black;
+  height: 200px;
+  width: 200px;
+}
+
+.project-item-img:hover {
   opacity: 1;
+}
+
+.project-item-txt:hover {
+  color:#FFCB9A;
 }

@@ -1,6 +1,5 @@
 import React from "react";
-import "../NavHam/style.css";
-import { clickEvent } from "../NavHam";
+import "../Header/style.css";
 
 function Nav (props) {
   const {

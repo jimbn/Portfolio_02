@@ -1,12 +1,13 @@
 import React from "react";
 import NavHam from "../NavHam";
+import './style.css'
 
 function Header ({pages, setCurrentPage}) {
 
   return(
     <header style={{ display: 'flex'}}>
-      <h1> Jim Bui Nguyen</h1>
-      <div style={{ paddingLeft:"1rem"}}>
+      <h1 className="highlight-header"> Jim Bui Nguyen</h1>
+      <div className="nav" style={{ }}>
         <NavHam 
           pages={pages}
           setCurrentPage={setCurrentPage}

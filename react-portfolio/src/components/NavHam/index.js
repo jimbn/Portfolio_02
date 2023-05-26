@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Nav from "../Nav";
-import "./style.css";
+import "../Header/style.css";
 
 function NavHam ({pages, setCurrentPage}) {
   const [isOpen, setIsOpen] = useState(false);

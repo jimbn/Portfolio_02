@@ -21,7 +21,7 @@ function Main ({ currentPage }) {
 
   return(
     <>
-      <h1 style={{display: "flex", justifyContent: "center"}}>{currentPage.name}</h1>
+      <h1 className="highlight" style={{display: "flex", justifyContent: "center"}}>{currentPage.name}</h1>
       <div>
         {renderPage()}
       </div>
