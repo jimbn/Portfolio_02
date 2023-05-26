@@ -11,10 +11,10 @@ function Nav (props) {
 
   return (
     <nav className={ `menu ${!isOpen ? '' : 'menu-open'}`} onClick={clickEvent}>
-      <ul style={{listStyleType:"none"}}>
+      <ul className ="menu-ul">
         {pages.map((Page) => (
           <li className="menu-li" key={Page.name}>
-            <span 
+            /<span 
             onClick={() => setCurrentPage(Page)}
             style={{cursor:"pointer"}}
             >

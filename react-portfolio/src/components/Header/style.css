@@ -1,5 +1,13 @@
-.nav {
-  padding-left: 1rem ;
+.header{
+  display: flex;
+}
+
+.header-highlight {
+  color: rgba(17, 100, 102,1);
+  text-shadow: 0 0 2px black;
+  background: rgba(44,53,49,1);
+  z-index: 20;
+  padding-right: 1rem;
 }
 
 /* Button */
@@ -14,6 +22,7 @@
   transition: 0.5s ease-in-out;
   position: relative;
   border-radius: 100rem;
+  
 }
 
 .hamburger {
@@ -21,7 +30,6 @@
   height: 5px;
   background: rgb(209,232,226);
   transition: 0.25s ease-in-out;
-  border-radius: 10px;
   justify-content: center;
   display: flex;
 }
@@ -32,10 +40,9 @@
   position: absolute;
   width: 35px;
   height: 5px;
-  outline: 0.5px solid rgba(209,232,226, .1);
+  outline: 1px solid rgba(209,232,226, .2);
   background: rgb(44,53,49);
   transition: 0.5s ease-in-out;
-  border-radius: 10px;
 }
 
 .hamburger::before {
@@ -65,19 +72,29 @@
 .menu{
   color: rgb(209, 232, 226);
   opacity: 0;
-  transition: 0.3s;
-  transform: translateX(-10%) translateY(-95%);
+  transition: 0.5s;
+  transform: translateX(-100%) translateY(-95%);
   pointer-events: none;
   position: absolute;
 }
 
 .menu-open{
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.5s;
   transform: translateX(25%) translateY(-95%);
   pointer-events: all;
 }
 
-.menu-li:hover {
+.menu-ul {
+  padding: 0 0 .75rem 0;
+}
+
+.menu-li{
+  list-style-type: none;
+  display: inline;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+}
+.menu-li span:hover {
   color:rgb(17,100,102)
 }

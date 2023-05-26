@@ -9,8 +9,8 @@ function Header ({pages, setCurrentPage}) {
   
 
   return(
-    <header style={{ display: 'flex'}}>
-      <h1 className="highlight-header"> Jim Bui Nguyen</h1>
+    <header className="header">
+      <h1 className="header-highlight"> Jim Bui Nguyen</h1>
       <div className="nav" >
         <NavHam 
           pages={pages}

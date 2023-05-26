@@ -25,11 +25,13 @@ function NavHam ({pages, setCurrentPage}) {
 
   return (
     <>
+      <div class='hide'>
       <AnimatePulse>
         <div className={ `menu-btn ${!isOpen ? '' : 'open'}`} onClick={clickEvent}>
           <div className="hamburger"></div>
         </div>
       </AnimatePulse>
+      </div>
       <Nav 
         pages={pages}
         setCurrentPage={setCurrentPage}

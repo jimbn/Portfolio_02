@@ -1,6 +1,8 @@
 import React from "react";
 import styled, {keyframes} from 'styled-components';
-import { fadeInLeft, fadeInRight } from 'react-animations'
+import { fadeInLeft, fadeInRight } from 'react-animations';
+
+import './style.css'
 
 
 function ProjectFocus({ focusProject, classNames }){
@@ -15,21 +17,21 @@ function ProjectFocus({ focusProject, classNames }){
 
 
   return(
-        <div  className={classNames} style={{display:"flex", padding:"1rem"}}>
+        <div  className="project-focus">
           <AnimateLeft>
-            <img style={{width: "400px", height:"350px"}} src={focusProject.image}/>
+            <img className="project-focus-img" src={focusProject.image}/>
           </AnimateLeft>
           <AnimateRight>
-            <div style={{padding:"1rem"}}>
-              <h2 style={{padding:"0 1rem"}}>{focusProject.name}</h2>
-              <p style={{padding:"1rem"}}>{focusProject.description}</p>
+            <div className="project-focus-txt">
+              <h2>{focusProject.name}</h2>
+              <p>{focusProject.description}</p>
               <h1>{focusProject.display}</h1>
-              <ul style={{columnCount: "3", columnGap:"10px", padding:"0 1rem"}}>
+              <ul>
                 {tools.map((tool, i)=> (
                   <li>{tool}</li>
                 ))}
               </ul> 
-              <div style={{display:"flex", justifyContent:"space-evenly", paddingTop:"1rem"}}>
+              <div class="project-focus-hyper" >
                 <a href={focusProject.gitHub} >GitHub</a>
                 <a href={focusProject.site}>Site</a>
               </div>
