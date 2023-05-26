@@ -11,8 +11,8 @@
 
 .project-item-txt {
   position: relative;
-  color:#D9B08C;
-  text-shadow: 0 0 2px black;
+  color:rgba(209,232,226);
+  text-shadow: 0 0 3px rgb(44,53,49);
   height: 200px;
   width: 200px;
 }
@@ -22,5 +22,6 @@
 }
 
 .project-item-txt:hover {
-  color:#FFCB9A;
+  color:rgba(17,100,102);
+  text-shadow: 0 0 4px rgb(209,232,226);
 }

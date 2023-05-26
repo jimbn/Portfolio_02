@@ -13,7 +13,7 @@ function Nav (props) {
     <nav className={ `menu ${!isOpen ? '' : 'menu-open'}`} onClick={clickEvent}>
       <ul style={{listStyleType:"none"}}>
         {pages.map((Page) => (
-          <li  key={Page.name}>
+          <li className="menu-li" key={Page.name}>
             <span 
             onClick={() => setCurrentPage(Page)}
             style={{cursor:"pointer"}}

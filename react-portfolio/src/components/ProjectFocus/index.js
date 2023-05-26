@@ -2,7 +2,6 @@ import React from "react";
 import styled, {keyframes} from 'styled-components';
 import { fadeInLeft, fadeInRight } from 'react-animations'
 
-import "./style.css"
 
 function ProjectFocus({ focusProject, classNames }){
 

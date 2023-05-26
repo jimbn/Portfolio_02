@@ -1,9 +1,16 @@
 import React, {useState} from "react";
+import styled, {keyframes} from 'styled-components';
+import { pulse } from 'react-animations';
+
 import Nav from "../Nav";
 import "../Header/style.css";
 
 function NavHam ({pages, setCurrentPage}) {
   const [isOpen, setIsOpen] = useState(false);
+
+  let keyPulse = keyframes`${pulse}`;
+  let AnimatePulse = styled.div`animation:  ${keyPulse} 3s linear 2s infinite`;
+
 
   function clickEvent() {
     
@@ -18,9 +25,11 @@ function NavHam ({pages, setCurrentPage}) {
 
   return (
     <>
-      <div className={ `menu-btn ${!isOpen ? '' : 'open'}`} onClick={clickEvent}>
-        <div className="hamburger"></div>
-      </div>
+      <AnimatePulse>
+        <div className={ `menu-btn ${!isOpen ? '' : 'open'}`} onClick={clickEvent}>
+          <div className="hamburger"></div>
+        </div>
+      </AnimatePulse>
       <Nav 
         pages={pages}
         setCurrentPage={setCurrentPage}

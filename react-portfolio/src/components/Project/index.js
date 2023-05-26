@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ProjectFocus from "../ProjectFocus";
 import ProjectList from "../ProjectList";
 import projectArray from "../../assets/projectList/projectArray";
-import "./style.css";
 
 function Project () {
   

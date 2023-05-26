@@ -19,7 +19,7 @@
 .hamburger {
   width: 20px;
   height: 5px;
-  background: white;
+  background: rgb(209,232,226);
   transition: 0.25s ease-in-out;
   border-radius: 10px;
   justify-content: center;
@@ -32,7 +32,8 @@
   position: absolute;
   width: 35px;
   height: 5px;
-  background: black;
+  outline: 0.5px solid rgba(209,232,226, .1);
+  background: rgb(44,53,49);
   transition: 0.5s ease-in-out;
   border-radius: 10px;
 }
@@ -51,18 +52,18 @@
 
 .open .hamburger::before {
   transform: rotate(45deg) translateY(-15px);
-  background:white;
+  background:rgb(209,232,226);
 }
 
 .open .hamburger::after {
   transform: rotate(-45deg) translatey(15px);
-  background:white;
+  background:rgb(209,232,226);
 }
 
 /* Menu */
 
 .menu{
-  color: #D1E8E2;
+  color: rgb(209, 232, 226);
   opacity: 0;
   transition: 0.3s;
   transform: translateX(-10%) translateY(-95%);
@@ -75,4 +76,8 @@
   transition: 0.3s;
   transform: translateX(25%) translateY(-95%);
   pointer-events: all;
+}
+
+.menu-li:hover {
+  color:rgb(17,100,102)
 }
