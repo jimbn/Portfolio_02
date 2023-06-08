@@ -4,12 +4,12 @@
 }
 
 .project-focus-img {
-  width: 400px;
-  height: 350px;
+  width: 20rem;
+  height: 17.5rem;
 }
 
 .project-focus-txt {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .project-focus-txt h2 {
@@ -22,7 +22,7 @@
 
 .project-focus-txt ul {
   column-count: 3;
-  column-gap: 10px;
+  column-gap: 0.5rem;
   padding: 0 1rem;
 }
 
@@ -36,10 +36,10 @@
   text-decoration: none;
   font-size: larger;
   color: rgb(209, 232, 226);
-  text-shadow: 0 0 1px rgb(44,53,49,1);
+  text-shadow: 0 0 0.2rem rgb(44,53,49,1);
 }
 
 .project-focus-hyper a:hover {
-  text-shadow: 0 0 3px rgb(209, 232, 226);
+  text-shadow: 0 0 0.2rem rgb(209, 232, 226);
 
 }

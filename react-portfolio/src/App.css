@@ -1,5 +1,6 @@
 *{
   margin: 0;
+  z-index: 5;
 }
 
 html {
@@ -7,7 +8,9 @@ html {
   height: 100%;
   background-position: center;
   color: rgb(209, 232, 226);
-  text-shadow: 0 0 2px black;
+  text-shadow: 0 0 2rem black;
+  position: relative;
+  font-size: 1.5vw;
 }
 
 body {
@@ -16,6 +19,29 @@ body {
 
 .highlight {
   color: rgba(17, 100, 102,1);
-  text-shadow: 0 0 2px black, 0 0 0.2rem rgba(17, 100, 102, 0.4), 0 0 .5rem rgba(209, 232, 226, 0.2);
+  text-shadow: 0 0 .5rem black;
 }
 
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { 
+  html{
+    font-size: calc(10px + 0.390625vw);
+  }
+ }
+
+/* Medium devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { 
+  html{
+    font-size: calc(12px + 0.390625vw);
+  }
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { 
+  html{
+    font-size: calc(15px + 0.390625vw);
+  }
+ } */

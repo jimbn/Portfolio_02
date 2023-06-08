@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-
+import Clock from "./components/Clock";
 
 import './App.css';
 
@@ -19,13 +19,15 @@ function App() {
 
   return (
     <div className=""  >
-    <Header
-      pages={pages}
-      setCurrentPage={setCurrentPage}
-    />
-    <Main currentPage={currentPage}/>
-    <Footer/>
-  </div>
+      
+      <Header
+        pages={pages}
+        setCurrentPage={setCurrentPage}
+      />
+      <Clock/>
+      <Main currentPage={currentPage}/>
+      <Footer/>
+    </div>
   );
 }
 

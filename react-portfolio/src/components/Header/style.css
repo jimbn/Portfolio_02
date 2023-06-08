@@ -4,10 +4,9 @@
 
 .header-highlight {
   color: rgba(17, 100, 102,1);
-  text-shadow: 0 0 2px black;
-  background: rgba(44,53,49,1);
+  text-shadow: 0 0 .5rem black;
   z-index: 20;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
 }
 
 /* Button */
@@ -16,18 +15,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 2.5rem;
+  height: 2.5rem;
   cursor: pointer;
   transition: 0.5s ease-in-out;
   position: relative;
-  border-radius: 100rem;
+  border-radius: 50%;
   
 }
 
 .hamburger {
-  width: 20px;
-  height: 5px;
+  width: 1.4rem;
+  height: 0.2rem;
   background: rgb(209,232,226);
   transition: 0.25s ease-in-out;
   justify-content: center;
@@ -38,9 +37,9 @@
 .hamburger::after {
   content: '';
   position: absolute;
-  width: 35px;
-  height: 5px;
-  outline: 1px solid rgba(209,232,226, .2);
+  width: 1.9rem;
+  height: 0.2rem;
+  outline: 0.1rem solid rgba(209,232,226, .2);
   background: rgb(44,53,49);
   transition: 0.5s ease-in-out;
 }
@@ -50,7 +49,7 @@
 }
 
 .hamburger::after {
-  transform: translatey(12px);
+  transform: translatey(0.75rem);
 }
 
 .menu-btn:hover {
@@ -58,12 +57,12 @@
 }
 
 .open .hamburger::before {
-  transform: rotate(45deg) translateY(-15px);
+  transform: rotate(45deg) translateY(-0.87rem);
   background:rgb(209,232,226);
 }
 
 .open .hamburger::after {
-  transform: rotate(-45deg) translatey(15px);
+  transform: rotate(-45deg) translatey(0.87rem);
   background:rgb(209,232,226);
 }
 
@@ -72,8 +71,9 @@
 .menu{
   color: rgb(209, 232, 226);
   opacity: 0;
-  transition: 0.5s;
-  transform: translateX(-100%) translateY(-95%);
+  transition: 0.4s;
+  transform: translate(-100%, -95%);
+
   pointer-events: none;
   position: absolute;
 }
@@ -81,8 +81,9 @@
 .menu-open{
   opacity: 1;
   transition: 0.5s;
-  transform: translateX(25%) translateY(-95%);
+  transform: translate(25%, -95%);
   pointer-events: all;
+  animation: disappear 2s linear;
 }
 
 .menu-ul {
