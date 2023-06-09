@@ -22,7 +22,7 @@ function Main ({ currentPage }) {
   return(
     <>
       <h1 className="highlight" >{currentPage.name}</h1>
-      <div>
+      <div className="main">
         {renderPage()}
       </div>
     </>

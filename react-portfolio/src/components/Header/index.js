@@ -10,7 +10,6 @@ function Header ({pages, setCurrentPage}) {
 
   return(
     <header className="header">
-      <h1 className="header-highlight"> Jim Bui Nguyen</h1>
       <div className="nav" >
         <NavHam 
           pages={pages}
