@@ -1,0 +1,15 @@
+.about {
+  display: flex;
+  padding: 1rem;
+}
+
+.about>img {
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.about-text {
+  padding:1rem;
+}

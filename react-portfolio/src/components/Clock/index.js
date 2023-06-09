@@ -3,41 +3,49 @@ import "./style.css";
 
 function Clock() {
 
-  // Get the local time using JS
   let date = new Date;
-  // let seconds = date.getSeconds();
+
   let minutes = date.getMinutes();
   let hours = date.getHours();
-  // let seconds = date.getSeconds();
+  let seconds = date.getSeconds();
 
-  // console.log(date);
 
-  // Create an object with each hand and it's angle in degrees
-  let hourAngle = (hours * 30) + (minutes / 2);
-  // let secondAngle = (seconds *6);
-
-  const [time, setTime] = useState(hourAngle);
+  let hourAngle = (hours*30) + (minutes/2);
+  let minuteAngle = (minutes*6);
+  let secondAngle = (seconds*6)
+  const [hour, setHour] = useState([hourAngle]);
+  const [minute, setMinute] = useState([minuteAngle])
+  const [second, setSecond] = useState([secondAngle])
 
   useEffect(() => {
+
     let hourHand = document.querySelector('.hours');
-    console.log(hourHand);
-    hourHand.style.webkitTransform = 'rotateZ('+ time +'deg)';
-    hourHand.style.transform = 'rotateZ('+ time +'deg)';
+    hourHand.style.webkitTransform = 'rotateZ('+ hour +'deg)';
+    hourHand.style.transform = 'rotateZ('+ hour +'deg)';
     
+    let secondHand = document.querySelector('.seconds');
+    secondHand.style.webkitTransform = 'rotateZ('+ second +'deg)';
+    secondHand.style.transform = 'rotateZ('+ second +'deg)';
+
+    let minuteHand = document.querySelector('.minutes');
+    minuteHand.style.webkitTransform = 'rotateZ('+ minute +'deg)';
+    minuteHand.style.transform = 'rotateZ('+ minute +'deg)'
   })
 
 
   function newTime (){
-      // Get the local time using JS
     let newDate = new Date;
-    // var seconds = newDate.getSeconds();
+    let newSeconds = newDate.getSeconds();
     let newMinutes = newDate.getMinutes();
     let newHours = newDate.getHours();
 
-    newTime = (newHours * 30) + (newMinutes / 2)
-    // let newTime = (seconds *6);
+    let newHourAngle = (newHours*30) + (newMinutes/2);
+    let newMinuteAngle = (newMinutes*6);
+    let newSecondAngle = (newSeconds*6)
 
-    setTime(newTime);
+    setHour(newHourAngle);
+    setMinute(newMinuteAngle);
+    setSecond(newSecondAngle);
   };
 
   setInterval(newTime, 1000);
@@ -47,6 +55,12 @@ function Clock() {
       <div className="clock">
         <div className="hours-container">
           <div className="hours"></div>
+        </div>
+        <div className="minutes-container">
+          <div className="minutes"></div>
+        </div>
+        <div className="seconds-container">
+          <div className="seconds"></div>
         </div>
       </div>
     </div>

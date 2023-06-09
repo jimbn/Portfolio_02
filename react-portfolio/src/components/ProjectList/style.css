@@ -10,7 +10,7 @@
   height: 12rem;
   width: 12rem;
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .project-item-txt {
@@ -19,6 +19,7 @@
   text-shadow: 0 0 0.1em rgb(44,53,49);
   height: 12rem;
   width: 12rem;
+  padding: 0.5rem;
 } 
 
 .project-item-txt>h4 {

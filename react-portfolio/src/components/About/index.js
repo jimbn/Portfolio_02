@@ -1,11 +1,12 @@
 import React from "react";
+import "./style.css";
 import myPic from "../../assets/images/profile-pic/myPic.jpg"
 
 function About () {
   return(
-    <div style={{display:"flex", padding:"1rem"}}>
-      <img style={{ width: "300px", height: "300px", borderRadius:"1000px", padding:"1rem" }}src ={myPic}/>
-      <div style={{ padding:"1rem"}}>
+    <div className='about'>
+      <img src ={myPic}/>
+      <div className="about-text">
         <p>
           I'm a driven full stack developer focusing on MERN stack. Recently completed and earned a certificate
           in Full Stack Web Development from University of California, Berkeley coding bootcamp. With my experience,

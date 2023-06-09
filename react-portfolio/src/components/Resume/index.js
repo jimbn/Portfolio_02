@@ -11,6 +11,11 @@ function Resume() {
           Download my <a href='./assets/Resume_JimBuiNguyen.pdf' download='Resume_JimBuiNguyen.pdf'>resume</a>
         </h5>
       </div>
+      <div>
+        <a>gmail</a>
+        <a>linked</a>
+        <a>github</a>
+      </div>
 
       <div>
         <div className='resume-background'>
@@ -50,7 +55,6 @@ function Resume() {
             <li>GraphQL</li>
           </ul>
         </div>
-
       </div>
     </section>
   )

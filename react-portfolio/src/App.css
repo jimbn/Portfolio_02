@@ -20,6 +20,8 @@ body {
 .highlight {
   color: rgba(17, 100, 102,1);
   text-shadow: 0 0 .5rem black;
+  display: flex;
+  justify-content: center;
 }
 
 /* Extra small devices (phones, less than 768px) */
