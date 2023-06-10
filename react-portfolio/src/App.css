@@ -1,6 +1,8 @@
 *{
   margin: 0;
   z-index: 5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 html {
@@ -22,32 +24,9 @@ body {
   text-shadow: 0 0 .5rem black;
   display: flex;
   justify-content: center;
+  padding: 0.5rem 0 0 0;
 }
 
 .main {
-  padding-bottom: 4rem;
+  padding: 1rem 0 2rem 0;
 }
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-/* @media (min-width: 768px) { 
-  html{
-    font-size: calc(10px + 0.390625vw);
-  }
- }
-
-/* Medium devices (desktops, 992px and up) */
-/* @media (min-width: 992px) { 
-  html{
-    font-size: calc(12px + 0.390625vw);
-  }
- }
-
-/* Large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { 
-  html{
-    font-size: calc(15px + 0.390625vw);
-  }
- } */

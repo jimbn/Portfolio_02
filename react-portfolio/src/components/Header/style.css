@@ -1,14 +1,7 @@
 .header{
   display: flex;
-  background: gradient(circle, rgba(209,232,226,.3), rgba(17,100,102,.2));
 }
 
-.header-highlight {
-  color: rgba(17, 100, 102,1);
-  text-shadow: 0 0 .5rem black;
-  z-index: 20;
-  padding-right: 0.5rem;
-}
 
 /* Button */
 

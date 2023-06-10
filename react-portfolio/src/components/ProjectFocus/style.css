@@ -1,20 +1,22 @@
 .project-focus {
   display:flex;
   padding:1rem;
+  overflow: hidden;
 }
 
 .project-focus-img {
   width: 20rem;
-  height: 17.5rem;
+  height: 90%;
+  padding-top: 1rem;
 }
 
 .project-focus-txt {
-  padding: 0 1rem;
+  padding: 1rem 2rem;
 }
 
 .project-focus-txt h2 {
   padding:0 1rem;
-};
+}
 
 .project-focus-txt p {
   padding: 1rem;  

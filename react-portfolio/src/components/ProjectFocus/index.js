@@ -25,7 +25,6 @@ function ProjectFocus({ focusProject, classNames }){
             <div className="project-focus-txt">
               <h2>{focusProject.name}</h2>
               <p>{focusProject.description}</p>
-              <h1>{focusProject.display}</h1>
               <ul>
                 {tools.map((tool, i)=> (
                   <li>{tool}</li>
