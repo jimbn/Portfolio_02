@@ -12,12 +12,6 @@ function Resume() {
         </h5>
       </div>
       <div>
-        <a>gmail</a>
-        <a>linked</a>
-        <a>github</a>
-      </div>
-
-      <div>
         <div className='resume-background'>
           <h3>Experience</h3>
           <ul className='experience'>

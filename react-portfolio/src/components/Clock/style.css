@@ -5,7 +5,7 @@
 }
 
 .background-clock{
-  z-index: 0;
+  z-index: 10;
   display: flex;
   position: fixed;
   overflow: hidden;
