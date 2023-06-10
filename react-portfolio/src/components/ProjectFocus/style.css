@@ -43,5 +43,5 @@
 
 .project-focus-hyper a:hover {
   text-shadow: 0 0 0.2rem rgb(209, 232, 226);
-
+  transform: scale(1.1);
 }
