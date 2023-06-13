@@ -23,7 +23,7 @@ const projectArray = [
       language: "JavaScript",
       tools: ["SQL", "Express.js", "Node.js", "Handlebars.js", "Multer", "Heroku"],
       gitHub:'https://github.com/MCORTEZM1/Only_Friends',
-      site: "https://only-friendz.herokuapp.com/",
+      site: "https://only-friend-2.herokuapp.com/",
       image: onlyFriends,
   },
   {
