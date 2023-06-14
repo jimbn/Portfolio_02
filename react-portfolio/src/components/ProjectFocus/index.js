@@ -31,8 +31,8 @@ function ProjectFocus({ focusProject, classNames }){
                 ))}
               </ul> 
               <div class="project-focus-hyper" >
-                <a href={focusProject.gitHub} >GitHub</a>
-                <a href={focusProject.site}>Site</a>
+                <a href={focusProject.gitHub} target='_blank' >GitHub</a>
+                <a href={focusProject.site} target='_blank'>Site</a>
               </div>
             </div>
           </AnimateRight>
