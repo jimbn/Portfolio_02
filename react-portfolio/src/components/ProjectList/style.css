@@ -11,7 +11,7 @@
   height: 12rem;
   width: 12rem;
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.6;
   border-radius: 0.5rem;
 }
 
@@ -41,4 +41,5 @@
 .project-item-txt:hover {
   color:rgba(17,100,102);
   text-shadow: 0 0 0.2rem rgb(209,232,226);
+  opacity: 1;
 }
