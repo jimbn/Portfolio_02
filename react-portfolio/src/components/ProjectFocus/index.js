@@ -30,7 +30,7 @@ function ProjectFocus({ focusProject, classNames }){
                   <li>{tool}</li>
                 ))}
               </ul> 
-              <div class="project-focus-hyper" >
+              <div className="project-focus-hyper" >
                 <a href={focusProject.gitHub} target='_blank' >GitHub</a>
                 <a href={focusProject.site} target='_blank'>Site</a>
               </div>

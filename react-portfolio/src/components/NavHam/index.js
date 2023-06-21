@@ -25,7 +25,7 @@ function NavHam ({pages, setCurrentPage}) {
 
   return (
     <>
-      <div class='hide'>
+      <div className='hide'>
       <AnimatePulse>
         <div className={ `menu-btn ${!isOpen ? '' : 'open'}`} onClick={clickEvent}>
           <div className="hamburger"></div>

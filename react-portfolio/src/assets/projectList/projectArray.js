@@ -1,5 +1,4 @@
-import React, { createRef } from "react";
-import { v4 as uuidv4 } from 'uuid'; 
+
 import partyHearty from "../images/ProjectScreenShot/PartyHearty.jpg"
 import onlyFriends from "../images/ProjectScreenShot/OnlyFriends.png"
 import humanBestfriend from "../images/ProjectScreenShot/HumanBestFriend.png"
@@ -13,7 +12,7 @@ const projectArray = [
       tools: ["MongodDb", "Express.js", "React", "Node.js", "GraphQL", "Leaflet",
   "Geosearch", "React-Bootstrap", "Material UI", "Heroku"],
       gitHub: 'https://github.com/sammcowen/party_hearty',
-      site: "https://stormy-thicket-02132.herokuapp.com/",
+      site: 'https://party-hearty-728d525f613c.herokuapp.com/',
       image: partyHearty,
   
   },
