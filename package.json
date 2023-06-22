@@ -8,6 +8,8 @@
   "scripts": {
     "start": "cd react-portfolio && npm run start",
     "develop": "cd react-portfolio && npm start",
+    "install": "cd react-portfolio && npm i",
+    "build": "cd react-portfolio && npm run build"
   },
   "keywords": [],
   "author": "",
