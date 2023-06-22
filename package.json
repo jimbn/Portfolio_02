@@ -8,7 +8,6 @@
   "scripts": {
     "start": "cd react-portfolio && npm run start",
     "develop": "cd react-portfolio && npm start",
-    "build": "cd client && npm run build"
   },
   "keywords": [],
   "author": "",
