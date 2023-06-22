@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "18.16"
+  },
+  "scripts": {
+    "start": "cd react-portfolio && npm run start",
+    "develop": "cd react-portfolio && npm start",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
