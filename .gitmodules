@@ -1,0 +1,3 @@
+[submodule "path_to_submodule"] 
+  path = ./react-portfolio
+  url = git@github.com:jimbn/Portfolio_02.git
